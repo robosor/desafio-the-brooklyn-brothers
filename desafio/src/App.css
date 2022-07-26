@@ -1,0 +1,109 @@
+body {
+  background-color: #282c34;
+  color: #0e1111;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 2em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+b {
+  font-size: 1.2em;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-left: 2%;
+}
+
+.card {
+  height: 18em;
+  width: 24em;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+img {
+  height: 6em;
+  width: 24em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.conteudo {
+  background-color: #FAFAFC;
+  height: 12em;
+  width: 24em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.card:hover .conteudo {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.card:hover img {
+  height: 18em;
+}
+
+.card {
+  cursor: pointer;
+}
+
+input {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: #333 !important;
+  line-height: 1.625 !important;
+  background-color: #fff !important;
+  background-image: url(//addsearch.com/logo/AAAAAA-20.png ) !important;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  border: 1px solid #eee !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  padding: 15px !important;
+  cursor: auto !important;
+}
